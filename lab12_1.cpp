@@ -11,7 +11,7 @@ int main(){
     cin.get();
     cin.get();
     cin.get();
-    int luck = rand()%8;
+    int luck = rand()%9;
 
     if(luck==0) grade = "A";
     else if(luck==1) grade = "B+" ;
@@ -20,7 +20,8 @@ int main(){
     else if(luck==4) grade = "C";
     else if(luck==5) grade = "D+";
     else if(luck==6) grade = "D";
-    else grade = "F";
+    else if(luck==7) grade = "F";
+    else grade = "W";
 
     cout << "You will get " << grade << " in this 261102.";
 
